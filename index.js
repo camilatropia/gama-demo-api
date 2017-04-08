@@ -15,7 +15,7 @@ MongoClient.connect('mongodb://demoUser:gama@ds155490.mlab.com:55490/demo', func
     console.log('Example app listening on port 3000!');
   });
 
-  require('./routes/user.route') (app, _db)
+  require('./routes/user.route') (app, db)
 
 
   console.log('banco de dados conectado')
