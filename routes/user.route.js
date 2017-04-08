@@ -1,6 +1,6 @@
-module.exports = function (app, db)
+module.exports = function (app, db) {
 
-get('/api/user', function (req, res) {
+app.get('/api/user', function (req, res) {
 
     db.collection('teste').find().toArray(function (err, result) {
         if (err) {
@@ -34,3 +34,4 @@ app.post('/api/user', function (req, res) {
 
 
 });
+}
